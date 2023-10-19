@@ -12,12 +12,8 @@ const AboutMe:FC = (props:AboutMeProps) => {
         <div className=" flex flex-row w-[1200px]  justify-center text-white">
             <div className="w-1/2 flex flex-col px-8">
                 <h1 className="text-3xl font-bold">About Me</h1>
-                <p className="mt-5" >
-                 I'm Davaanyam Bayasgalan from Ulaanbaatar, Mongolia. As a 3rd-year software engineering student at ITMO University in Saint-Petersburg, I'm passionate about crafting innovative solutions through code.  
-                </p>
-                <p className="mt-5">
-                Outside academics, I enjoy chess, basketball, and diving deeper into coding projects. Known for being a fast learner and a collaborative teammate, I'm eager to connect and share insights in the tech realm.
-                </p>              
+                <p className="mt-5" >I&apos;m Davaanyam Bayasgalan from Ulaanbaatar, Mongolia. As a 3rd-year software engineering student at ITMO University in Saint-Petersburg, I&apos;m passionate about crafting innovative solutions through code.  </p>
+                <p className="mt-5">Outside academics, I enjoy chess, basketball, and diving deeper into coding projects. Known for being a fast learner and a collaborative teammate, I&apos;m eager to connect and share insights in the tech realm.</p>              
             </div>
             <div className="w-1/2 flex flex-col items-center  px-8">
                 <h1 className="text-3xl font-bold w-full">Work Experience</h1>
