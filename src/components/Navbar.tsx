@@ -17,7 +17,7 @@ const Navbar:FC = (props:NavbarProps) => {
     }
 
     return<>
-        <div className={`h-screen md:h-auto text-white flex flex-col w-[100%] lg:justify-center lg:items-center lg:px-10 absolute z-10 top-0 md:bg-inherit bg-dark ${burgerClicked? "left-0" : "left-[-100%]" }`}>
+        <div className={`font-poppins h-screen md:h-auto md:bg-gradient-to-b md:from-dark md:from-60% text-white flex flex-col md:fixed w-[100%] lg:justify-center lg:items-center lg:px-10 absolute z-10 top-0 md:bg-inherit bg-dark ${burgerClicked? "left-0" : "left-[-100%]" }`}>
             <div className="fixed z-20 top-[10px] right-[10px] md:hidden">
                 <button onClick={onClickMenu}>{burgerClicked ? <FaPlus className="rotate-45 text-lg" /> : <BsList className="text-lg" /> }</button>
             </div>

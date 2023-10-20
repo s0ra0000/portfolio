@@ -8,22 +8,22 @@ interface AboutMeProps {
 
 const AboutMe:FC = (props:AboutMeProps) => {
     return <>
-    <div className="flex bg-dark justify-center items-center h-screen">
+    <div className="flex bg-dark justify-center items-center h-screen font-poppins">
         <div className=" flex flex-row w-[1200px]  justify-center text-white">
             <div className="w-1/2 flex flex-col px-8">
                 <h1 className="text-3xl font-bold">About Me</h1>
-                <p className="mt-5" >I&apos;m Davaanyam Bayasgalan from Ulaanbaatar, Mongolia. As a 3rd-year software engineering student at ITMO University in Saint-Petersburg, I&apos;m passionate about crafting innovative solutions through code.  </p>
-                <p className="mt-5">Outside academics, I enjoy chess, basketball, and diving deeper into coding projects. Known for being a fast learner and a collaborative teammate, I&apos;m eager to connect and share insights in the tech realm.</p>              
+                <p className="mt-5 text-slate-200" >I&apos;m Davaanyam Bayasgalan from Ulaanbaatar, Mongolia. As a 3rd-year software engineering student at ITMO University in Saint-Petersburg, I&apos;m passionate about crafting innovative solutions through code.  </p>
+                <p className="mt-5 text-slate-200">Outside academics, I enjoy chess, basketball, and diving deeper into coding projects. Known for being a fast learner and a collaborative teammate, I&apos;m eager to connect and share insights in the tech realm.</p>              
             </div>
             <div className="w-1/2 flex flex-col items-center  px-8">
                 <h1 className="text-3xl font-bold w-full">Work Experience</h1>
                 <div className="flex flex-col w-full mt-5">
                     <div className="flex flex-col w-full">
-                         <div className="flex flex-row justify-between text-xl">
+                         <div className="flex flex-row justify-between text-xl font-medium">
                             <p>Junior Web Developer</p>
-                            <p>Full time</p>
+                            <p className="flex  items-center bg-white text-dark text-sm px-2 rounded font-medium">Intern</p>
                         </div>       
-                        <div className="flex flex-row justify-between items-center text-xs mt-2">
+                        <div className="flex flex-row justify-between items-center text-xs mt-2 text-slate-200">
                             <div className="flex flex-row items-center">
                                 <p className="flex items-center mr-3"><HiMiniBuildingLibrary className="mr-1"/>Golomt Bank</p>
                                 <p className="flex items-center mr-3"><HiOutlineLocationMarker className="mr-1"/>Ulaanbaatar, Mongolia</p>
