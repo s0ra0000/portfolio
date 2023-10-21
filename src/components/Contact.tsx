@@ -1,11 +1,8 @@
 import React, { FC } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { SiTelegram } from "react-icons/si";
-interface ContactProps {
-    [key: string]: any;
-}
 
-const Contact: FC = (props: ContactProps) => {
+const Contact: FC = () => {
     return (
         <>
             <div className="flex bg-dark justify-center items-center h-screen font-poppins">

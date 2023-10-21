@@ -4,11 +4,8 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { SiTelegram } from "react-icons/si";
 import { FaPlus } from "react-icons/fa";
 import { BsList } from "react-icons/bs";
-interface NavbarProps {
-    [key: string]: any;
-}
 
-const Navbar: FC = (props: NavbarProps) => {
+const Navbar: FC = () => {
     const [burgerClicked, setBurgerClicked] = useState<boolean>(true);
 
     const onClickMenu = () => {

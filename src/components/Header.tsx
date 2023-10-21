@@ -1,11 +1,7 @@
 import { FC } from "react";
 import Image from "next/image";
-import { MdWavingHand } from "react-icons/md";
-interface HeaderProps {
-    [key: string]: any;
-}
 
-const Header: FC = (props: HeaderProps) => {
+const Header: FC = () => {
     return (
         <>
             <div className="bg-dark flex justify-center items-center pt-4 font-poppins">
