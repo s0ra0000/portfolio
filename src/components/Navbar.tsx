@@ -1,5 +1,5 @@
 "use client";
-import React, { FC, useState } from "react";
+import React, { FC, useState, useEffect } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { SiTelegram } from "react-icons/si";
 import { FaPlus } from "react-icons/fa";
@@ -11,11 +11,22 @@ const Navbar: FC = () => {
     const onClickMenu = () => {
         setBurgerClicked(!burgerClicked);
     };
+    useEffect(() => {
+        const handleResize = () => {
+            setBurgerClicked(window.innerWidth >= 768);
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
 
     return (
         <>
             <div
-                className={`font-poppins h-screen md:h-auto md:bg-gradient-to-b md:from-dark md:from-60% text-white flex flex-col md:fixed w-[100%] lg:justify-center lg:items-center lg:px-10 absolute z-10 top-0 md:bg-inherit bg-dark ${
+                className={`font-poppins h-screen md:h-auto md:bg-gradient-to-b md:from-dark md:from-60% text-white flex flex-col md:fixed w-[100%] lg:justify-center xl:items-center xl:px-10 absolute z-10 top-0 md:bg-inherit bg-dark ${
                     burgerClicked ? "left-0" : "left-[-100%]"
                 }`}
             >
@@ -24,7 +35,7 @@ const Navbar: FC = () => {
                         {burgerClicked ? <FaPlus className="rotate-45 text-lg" /> : <BsList className="text-lg" />}
                     </button>
                 </div>
-                <div className="flex w-[100%] flex-col p-10 justify-between items-center h-full md:flex-row md:h-auto  lg:w-[1200px] md:py-5">
+                <div className="flex w-[100%] flex-col p-10 justify-between items-center h-full md:flex-row md:h-auto  xl:w-[1200px] md:py-5">
                     <p>Home</p>
                     <p>About</p>
                     <p>Tech Stack</p>
