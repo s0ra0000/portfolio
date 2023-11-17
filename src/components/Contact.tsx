@@ -7,9 +7,9 @@ const Contact: FC = () => {
         <>
             <div className="flex bg-dark justify-center items-center h-screen font-poppins">
                 <div className="flex flex-col w-[800px] items-center justify-center text-white">
-                    <h1 className="text-5xl font-bold">Contact Me</h1>
-                    <div className="flex flex-col w-full mt-10 justify-center items-center">
-                        <form className="flex flex-col w-full">
+                    <h1 className="text-3xl md:text-5xl font-bold">Contact Me</h1>
+                    <div className="flex flex-col w-full mt-10 justify-center items-center ">
+                        <form className="flex flex-col w-full px-6 md:px-0">
                             <input
                                 name="username"
                                 type="text"
