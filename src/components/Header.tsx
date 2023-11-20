@@ -11,8 +11,10 @@ const Header: FC = () => {
                             Hello!, I`m <span className="text-2xl font-bold md:text-4xl">Bayasgalan</span>
                         </p>
                         <p className="mt-5 text-slate-200 text-xs md:text-lg">
-                            <span className="underline underline-offset-2">Software Engineering</span> student at ITMO
-                            University
+                            <span className="underline underline-offset-2 text-transparent bg-clip-text bg-gradient-to-r from-rose-500 via-red-400 to-red-500 decoration-rose-500">
+                                Software Engineering
+                            </span>{" "}
+                            student at ITMO University
                         </p>
                     </div>
                     <div className="flex md:h-full justify-center md:items-center w-full md:w-1/2 h-1/2 relative">

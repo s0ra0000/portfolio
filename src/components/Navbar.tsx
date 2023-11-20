@@ -36,14 +36,22 @@ const Navbar: FC = () => {
                     </button>
                 </div>
                 <div className="flex w-[100%] flex-col p-10 justify-between items-center h-full md:flex-row md:h-auto  xl:w-[1200px] md:py-5">
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Tech Stack</p>
-                    <p>Contact</p>
+                    <p className="block hover:border-b hover:border-rose-500 px-4 border-b border-dark cursor-pointer">
+                        Home
+                    </p>
+                    <p className="block hover:border-b hover:border-rose-500 px-4 border-b border-dark cursor-pointer">
+                        About
+                    </p>
+                    <p className="block hover:border-b hover:border-rose-500 px-4 border-b border-dark cursor-pointer">
+                        Tech Stack
+                    </p>
+                    <p className="block hover:border-b hover:border-rose-500 px-4 border-b border-dark cursor-pointer">
+                        Contact
+                    </p>
                     <div className="flex flex-row w-[40%] justify-between md:w-auto text-xl">
-                        <AiFillGithub className="mx-2" />
-                        <AiFillLinkedin className="mx-2" />
-                        <SiTelegram className="mx-2" />
+                        <AiFillGithub className="mx-2 cursor-pointer hover:text-rose-500 " />
+                        <AiFillLinkedin className="mx-2 cursor-pointer hover:text-rose-500" />
+                        <SiTelegram className="mx-2 cursor-pointer hover:text-rose-500" />
                     </div>
                 </div>
             </div>
