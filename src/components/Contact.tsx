@@ -33,14 +33,14 @@ const Contact: FC = () => {
                                 className="w-full px-5 py-4 bg-dark border-slate-400 border-2 rounded outline-slate-300 text-lg my-2"
                                 placeholder="Message"
                             ></textarea>
-                            <button className="w-full py-3 text-lg bg-dark border-2 rounded border-slate-400 hover:text-dark hover:bg-white hover:border-white my-2">
+                            <button className="w-full py-3 text-lg bg-dark border-2 rounded border-slate-400 hover:text-dark hover:bg-white hover:border-white my-2 ">
                                 SEND MESSAGE
                             </button>
                         </form>
                         <div className="flex flex-row justify-center items-center mt-10 text-4xl">
-                            <AiFillGithub className="mx-4" />
-                            <AiFillLinkedin className="mx-4" />
-                            <SiTelegram className="mx-4" />
+                            <AiFillGithub className="mx-4 hover:text-rose-500 cursor-pointer" />
+                            <AiFillLinkedin className="mx-4 hover:text-rose-500 cursor-pointer" />
+                            <SiTelegram className="mx-4 hover:text-rose-500 cursor-pointer" />
                         </div>
                     </div>
                 </div>
