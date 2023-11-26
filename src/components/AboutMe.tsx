@@ -5,8 +5,8 @@ import { BsCalendar3 } from "react-icons/bs";
 
 const AboutMe: FC = () => {
     return (
-        <div className="flex bg-dark justify-center items-center h-screen font-poppins">
-            <div className="flex justify-center items-center w-[1200px]">
+        <div id="about_me" className="flex bg-dark justify-center items-center h-screen font-poppins">
+            <div className="flex justify-center items-center w-full lg:w-[1200px]">
                 <div className=" flex flex-col lg:flex-row w-[1200px] justify-center text-white h-full items-start">
                     <div className="w-full lg:w-1/2 flex flex-col lg:px-8 sm:py-16 sm:px-16 p-4">
                         <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-rose-500 via-red-400 to-red-500">

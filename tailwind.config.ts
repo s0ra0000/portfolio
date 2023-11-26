@@ -27,3 +27,4 @@ const config: Config = {
   plugins: [],
 }
 export default config
+// background-image: radial-gradient( circle farthest-corner at 14.2% 24%,  rgba(239,61,78,1) 0%, rgba(239,61,78,0.81) 51.8%, rgba(239,61,78,0.63) 84.6% );
