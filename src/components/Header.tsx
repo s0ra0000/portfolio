@@ -16,12 +16,12 @@ const Header = () => {
                     </p>
                 </div>
                 <div className="flex md:h-full justify-center items-end md:items-center w-full md:w-1/2 h-1/2 relative">
-                    <div className="relative w-[250px] h-auto flex justify-center items-end md:w-[408px]">
+                    <div className="relative w-[250px] h-auto flex justify-center items-end md:w-[400px]">
                         <Image
                             src="/iron2.png"
-                            width={408}
-                            height={408}
-                            sizes="(min-width: 780px) 384px, 250px"
+                            width={400}
+                            height={400}
+                            sizes="(min-width: 780px) 400px, 250px"
                             alt=""
                         />
                     </div>
