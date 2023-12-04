@@ -1,9 +1,9 @@
 import React, { FC } from "react";
-import Image from "next/image";
+import StackItem from "./StackItem";
 
 const Stack: FC = () => {
     return (
-        <div id="stack" className="flex bg-dark justify-center items-center h-screen font-poppins">
+        <section id="stack" className="flex bg-dark justify-center items-center h-screen font-poppins">
             <div className="flex flex-col w-[1200px] items-center justify-center text-white">
                 <h1 className="text-2xl md:text-4xl font-bold">
                     My Tech{" "}
@@ -11,64 +11,20 @@ const Stack: FC = () => {
                         Stack
                     </span>
                 </h1>
-                <div className="mt-14 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-12 md:gap-x-20 lg:gap-x-32 gap-y-10 md:gap-y-12 lg:gap-y-20">
-                    <div className="w-[50px] md:w-[100px] hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-rose-500 hover:via-red-400 hover:to-red-500">
-                        <Image className="invert" src={"/stack/html.png"} width={100} height={100} alt={""} />
-                        <p className="w-full text-center block my-1 font-bold text-xs md:text-sm tracking-wide">
-                            HTML5
-                        </p>
-                    </div>
-                    <div className="w-[50px] md:w-[100px] hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-rose-500 hover:via-red-400 hover:to-red-500">
-                        <Image className="invert" src={"/stack/css.png"} width={100} height={100} alt={""} />
-                        <p className="w-full text-center block my-1 font-bold text-xs md:text-sm tracking-wide">CSS3</p>
-                    </div>
-                    <div className="w-[50px] md:w-[100px] hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-rose-500 hover:via-red-400 hover:to-red-500">
-                        <Image className="invert" src={"/stack/sass.png"} width={100} height={100} alt={""} />
-                        <p className="w-full text-center block my-1 font-bold text-xs md:text-sm tracking-wide">SASS</p>
-                    </div>
-                    <div className="w-[50px] md:w-[100px] hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-rose-500 hover:via-red-400 hover:to-red-500">
-                        <Image className="invert" src={"/stack/tailwind.png"} width={100} height={100} alt={""} />
-                        <p className="w-full text-center block my-1 font-bold text-xs md:text-sm tracking-wide">
-                            TAILWIND
-                        </p>
-                    </div>
-                    <div className="w-[50px] md:w-[100px] hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-rose-500 hover:via-red-400 hover:to-red-500">
-                        <Image className="invert" src={"/stack/js.png"} width={100} height={100} alt={""} />
-                        <p className="w-full text-center block my-1 font-bold text-xs md:text-sm tracking-wide">
-                            JAVASCRIPT
-                        </p>
-                    </div>
-                    <div className="w-[50px] md:w-[100px] hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-rose-500 hover:via-red-400 hover:to-red-500">
-                        <Image className="invert" src={"/stack/react.png"} width={100} height={100} alt={""} />
-                        <p className="w-full text-center block my-1 font-bold text-xs md:text-sm tracking-wide">
-                            REACT
-                        </p>
-                    </div>
-                    <div className="w-[50px] md:w-[100px] hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-rose-500 hover:via-red-400 hover:to-red-500">
-                        <Image className="invert" src={"/stack/next.png"} width={100} height={100} alt={""} />
-                        <p className="w-full text-center block my-1 font-bold text-xs md:text-sm tracking-wide">
-                            NEXT.JS
-                        </p>
-                    </div>
-                    <div className="flex flex-col justify-between w-[50px] md:w-[100px] hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-rose-500 hover:via-red-400 hover:to-red-500">
-                        <Image className="invert" src={"/stack/fastify.png"} width={100} height={100} alt={""} />
-                        <p className="w-full text-center block my-1 font-bold text-xs md:text-sm tracking-wide bottom-0">
-                            FASTIFY
-                        </p>
-                    </div>
-                    <div className="w-[50px] md:w-[100px] hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-rose-500 hover:via-red-400 hover:to-red-500">
-                        <Image className="invert" src={"/stack/git.png"} width={100} height={100} alt={""} />
-                        <p className="w-full text-center block my-1 font-bold text-xs md:text-sm tracking-wide ">GIT</p>
-                    </div>
-                    <div className="w-[50px] md:w-[100px] hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-rose-500 hover:via-red-400 hover:to-red-500">
-                        <Image className="invert" src={"/stack/github.png"} width={100} height={100} alt={""} />
-                        <p className="w-full text-center block my-1 font-bold text-xs md:text-sm tracking-wide">
-                            GITHUB
-                        </p>
-                    </div>
+                <div className="mt-14 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-12 md:gap-x-20 lg:gap-x-32 gap-y-10 md:gap-y-12 lg:gap-y-20">
+                    <StackItem img="/stack/html.png" name="HTML5" />
+                    <StackItem img="/stack/css.png" name="CSS3" />
+                    <StackItem img="/stack/sass.png" name="SASS" />
+                    <StackItem img="/stack/tailwind.png" name="TAILWIND" />
+                    <StackItem img="/stack/js.png" name="JAVASCRIPT" />
+                    <StackItem img="/stack/react.png" name="REACT" />
+                    <StackItem img="/stack/next.png" name="NEXT.JS" />
+                    <StackItem img="/stack/fastify.png" name="FASTIFY" />
+                    <StackItem img="/stack/git.png" name="GIT" />
+                    <StackItem img="/stack/github.png" name="GITHUB" />
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

@@ -29,7 +29,7 @@ const Navbar: FC = () => {
     }, []);
 
     return (
-        <div
+        <nav
             className={`ease-in-out duration-500 font-poppins h-screen md:h-auto md:bg-gradient-to-b md:from-dark md:from-60% text-white flex flex-col md:fixed w-[100%] lg:justify-center xl:items-center xl:px-10 fixed z-10 top-0 md:bg-inherit bg-dark ${
                 burgerClicked ? "left-0" : "left-[-100%]"
             }`}
@@ -74,7 +74,7 @@ const Navbar: FC = () => {
                     </Link>
                 </div>
             </div>
-        </div>
+        </nav>
     );
 };
 
