@@ -1,9 +1,8 @@
-import { FC } from "react";
+"use client";
 import Image from "next/image";
-
-const Header: FC = () => {
+const Header = () => {
     return (
-        <div id="header" className="bg-dark flex justify-center items-center font-poppins">
+        <header id="header" className="bg-dark flex justify-center items-center font-poppins">
             <div className="flex flex-col-reverse md:flex-row w-[1200px] justify-around items-center md:justify-around h-screen">
                 <div className="text-white md:h-full flex flex-col justify-start items-center md:w-1/2 w-full h-1/2 md:h-screen md:justify-center">
                     <p className="text-2xl  md:text-4xl">
@@ -19,7 +18,7 @@ const Header: FC = () => {
                 <div className="flex md:h-full justify-center items-end md:items-center w-full md:w-1/2 h-1/2 relative">
                     <div className="relative w-[250px] h-auto flex justify-center items-end md:w-[408px]">
                         <Image
-                            src="/iron1.png"
+                            src="/iron2.png"
                             width={408}
                             height={408}
                             sizes="(min-width: 780px) 384px, 250px"
@@ -28,7 +27,7 @@ const Header: FC = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
     );
 };
 
