@@ -8,7 +8,7 @@ const AboutMe: FC = () => {
         <section id="about_me" className="flex bg-dark justify-center items-center h-screen font-poppins">
             <div className="flex justify-center items-center w-full lg:w-[1200px]">
                 <div className=" flex flex-col lg:flex-row xl:w-[1200px] justify-center text-white h-full items-start">
-                    <div className="w-full lg:w-1/2 flex flex-col lg:px-8 sm:py-16 sm:px-16 p-4">
+                    <header className="w-full lg:w-1/2 flex flex-col lg:px-8 sm:py-16 sm:px-16 p-4">
                         <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-rose-500 via-red-400 to-red-500">
                             About Me
                         </h1>
@@ -22,7 +22,7 @@ const AboutMe: FC = () => {
                             for being a fast learner and a collaborative teammate, I&apos;m eager to connect and share
                             insights in the tech realm.
                         </p>
-                    </div>
+                    </header>
                     <div className="w-full lg:w-1/2 flex flex-col justify-start items-center  lg:px-8 sm:py-16 sm:px-16 p-4">
                         <h1 className="text-3xl font-bold w-full text-transparent bg-clip-text bg-gradient-to-r from-rose-500 via-red-400 to-red-500">
                             Work Experience
@@ -35,7 +35,7 @@ const AboutMe: FC = () => {
                                         Intern
                                     </p>
                                 </div>
-                                <div className="flex flex-row justify-between items-center text-xs mt-2 text-slate-200">
+                                <article className="flex flex-row justify-between items-center text-xs mt-2 text-slate-200">
                                     <div className="flex flex-row items-center">
                                         <p className="flex items-center sm:mr-3">
                                             <HiMiniBuildingLibrary className="mr-1" />
@@ -49,7 +49,7 @@ const AboutMe: FC = () => {
                                     <p className="flex items-center">
                                         <BsCalendar3 className="mr-1" /> JUL 2023 - SEP 2023
                                     </p>
-                                </div>
+                                </article>
                             </div>
                         </div>
                     </div>
